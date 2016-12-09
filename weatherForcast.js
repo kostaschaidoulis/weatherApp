@@ -31,16 +31,6 @@ $('document').ready(function () {
         
         var weatherReport = athens.weather;
         
-        //try {
-            //if(typeof(weatherReport) === String) {
-                //switch (weatherReport) {
-                    //case "clear sky":
-                        //$("")
-                //}
-            //} else {
-                //console.log("Not a string")
-            //};
-        //
         
         $('#overallWeather').html(athens.weather);
         $('#temperature').html(athens.temp + " Celcius");
