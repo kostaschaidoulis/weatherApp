@@ -1,0 +1,914 @@
+/* ------------ FONTS IMPORTS --------- */
+
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans|Libre+Franklin|PT+Sans+Narrow');
+
+/* --------- LESS COLORS -------------- */
+
+    @dayContainerColor: #64B5F6;    
+    @black: #000;
+    @white: #fff; 
+    @dayContainerColorHover: #2196F3;
+    @navBackGroundColor: #0D47A1;
+    @borderColor: #E3F2FD;
+
+/* --------- LESS SELECTORS ----------- */
+
+
+
+
+
+/* ---------- ELEMENT SELECTORS ------- */
+
+body {
+    font-family: 'Libre Franklin';
+    background-color: @navBackGroundColor;
+}
+
+
+
+/* ---------- CLASS SELECTORS --------- */
+
+.navbar {
+    border: none;
+    border-radius: none;
+    background-color: @navBackGroundColor;
+    opacity: 0.9;
+}
+
+.navbar {
+    .navbar-toggle:hover {
+        background-color: @navBackGroundColor;
+    }
+}
+
+
+/*-------- Selects all the a elements in the collapse box -- */
+
+.navbar {
+    #bs-example-navbar-collapse-1 {
+        li {
+            a {
+                color: @white;
+            }
+        }
+    }
+}
+
+.navbar {
+    #bs-example-navbar-collapse-1 {
+        li:hover {
+            background-color: @navBackGroundColor;
+        }
+    }
+}
+.navbar {
+    #bs-example-navbar-collapse-1 {
+        li {
+            a:hover {
+                color: @white;
+            }
+        }
+    }
+}
+
+.navbar {
+    .navbar-header {
+        .navbar-brand {
+            color: @white;
+        }
+    }
+}
+
+.navbar {
+    .navbar-header {
+        .navbar-brand:hover {
+            color: @white;
+        }
+    }
+}
+
+.navbar.navbar-default .navbar-collapse {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.dayConteiner {
+	width: 100%;
+    height: 6em;
+    background-color: @navBackGroundColor;
+    border-top: 0.1em @borderColor solid;
+    border-bottom: 0.1em @borderColor solid;
+    h3 {
+        display: block;
+        color: @white;
+        font-size: 2em;
+        margin: 0.8em auto;
+    }
+}
+
+.dayConteiner:hover {
+        background-color: @dayContainerColor;
+}
+
+.weatherBars {
+	border-top: 0.08em @borderColor solid;
+}
+
+
+
+
+
+/*----------------- ID SELECTORS ------------- */
+
+#mainImage {
+	border-bottom: 0.1em @borderColor solid;
+}
+
+#map {
+     width: 100%;
+     height: 20em;
+	 border-top: 0.1em @borderColor solid;
+     border-bottom: 0.1em @borderColor solid;
+}
+
+
+#weatherMap {
+	width: 100%;
+    height: 20em;
+    border-top: 0.1em @borderColor solid;
+    border-bottom: 0.1em @borderColor solid;
+}
+
+
+#weatherReportHeader {
+    display: block;
+    color: @white;
+    opacity: 0.8;
+}
+
+
+#overallWeatherIcon {
+	width: 8%;
+    height: 8%;
+    margin-top: 0.5em;
+    margin-bottom: 0.6em;
+    background-color: @borderColor;
+    border-radius: 90%;
+    opacity: 0.7;
+}
+
+#temperatureIcon {
+	width: 8%;
+    height: 8%;
+    margin-top: 0.5em;
+    margin-bottom: 0.6em;
+    background-color: @borderColor;
+    border-radius: 90%;
+    opacity: 0.7;
+}
+
+
+
+#windIcon {
+    width: 8%;
+    height: 8%;
+    margin-top: 0.5em;
+    margin-bottom: 0.6em;
+    background-color: @borderColor;
+    border-radius: 90%;
+    opacity: 0.7;
+}
+
+#dayTime {
+    width: 8%;
+    height: 8%;
+    margin-top: 0.5em;
+    margin-bottom: 0.6em;
+    background-color: @borderColor;
+    border-radius: 90%;
+    opacity: 0.7;
+}
+
+
+
+
+#weatherReportLetsHide {
+    background-color: @navBackGroundColor;
+    display: none;
+}
+
+#weatherImage {
+    width: 100%;
+}
+
+
+
+
+
+/* --------- MEDIA QUERRIES ----------- */
+
+/* --------- Because media queries override each other this trick offers a easy and control way for decradation -----------------*/
+
+/*-------------- 320px ---------------- */
+@media (min-width: 319px) {
+    
+    .navbar {
+    height: 10% !important;
+    border: none;
+    border-radius: none;
+    background-color: @navBackGroundColor;
+    opacity: 0.9;
+    }
+    
+    .contaenerOfweather {
+        display: block;
+        margin: 0 auto;
+        margin-top: -13em;
+    }
+    
+    #weatherReportHeader {
+        font-size: 2em;
+    }
+    
+    .spanForInfo {
+        margin: 0 auto;
+        display: block;
+        font-size: 1.5em;
+        color: @white;
+        opacity: 0.9;
+        padding: 0;
+        margin-top: -1.4em;
+        margin-bottom: 0.2em;
+        width: 60%;
+    }
+    
+}
+
+@media (min-width: 320px) {
+    .contaenerOfweather {
+        display: block;
+        margin: 0 auto;
+        margin-top: -13em;
+    }
+    
+    #weatherReportHeader {
+        font-size: 2em;
+    }
+    
+    .spanForInfo {
+        margin: 0 auto;
+        display: block;
+        font-size: 1.5em;
+        color: @white;
+        opacity: 0.9;
+        padding: 0;
+        margin-top: -1.4em;
+        margin-bottom: 0.2em;
+        width: 60%;
+    }
+    
+}
+
+
+/*-------------- 374px ---------------- */
+
+@media (min-width: 374px) {
+    
+    .navbar {
+    height: 10% !important;
+    border: none;
+    border-radius: none;
+    background-color: @navBackGroundColor;
+    opacity: 0.9;
+    }
+    
+    .contaenerOfweather {
+        display: block;
+        margin: 0 auto;
+        margin-top: -15em;
+        margin-bottom: 2em;
+    }
+    
+    #weatherReportHeader {
+        font-size: 2em;
+    }
+    
+    .spanForInfo {
+        margin: 0 auto;
+        display: block;
+        font-size: 1.5em;
+        color: @white;
+        opacity: 0.9;
+        padding: 0;
+        margin-top: -1.4em;
+        margin-bottom: 0.2em;
+        width: 60%;
+    }
+}
+
+/*-------------- 437px ---------------- */
+
+@media (min-width: 437px) {
+    
+    .navbar {
+    height: 10% !important;
+    border: none;
+    border-radius: none;
+    background-color: @navBackGroundColor;
+    opacity: 0.9;
+    }
+    
+    .contaenerOfweather {
+        display: block;
+        margin: 0 auto;
+        margin-top: -16em;
+    }
+    
+    #weatherReportHeader {
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+    
+    .spanForInfo {
+        margin: 0 auto;
+        display: block;
+        font-size: 1.5em;
+        color: @white;
+        opacity: 0.9;
+        padding: 0;
+        margin-top: -1.4em;
+        margin-bottom: 0.2em;
+        width: 60%;
+    }
+}
+
+/*-------------- 507px ---------------- */
+
+@media (min-width: 506px) {
+    
+    .navbar {
+    height: 10% !important;
+    border: none;
+    border-radius: none;
+    background-color: @navBackGroundColor;
+    opacity: 0.9;
+    }
+    
+    .contaenerOfweather {
+        display: block;
+        margin: 0 auto;
+        margin-top: -18em;
+        margin-bottom: 1em;
+    }
+    
+    #weatherReportHeader {
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+    
+    .spanForInfo {
+        margin: 0 auto;
+        display: block;
+        font-size: 1.5em;
+        color: @white;
+        opacity: 0.9;
+        padding: 0;
+        margin-top: -1.4em;
+        margin-bottom: 0.2em;
+        width: 60%;
+    }
+}
+
+/*-------------- 567px ---------------- */
+
+@media (min-width: 567px) {
+    
+    .navbar {
+    height: 10% !important;
+    border: none;
+    border-radius: none;
+    background-color: @navBackGroundColor;
+    opacity: 0.9;
+    }
+    
+    .contaenerOfweather {
+        display: block;
+        margin: 0 auto;
+        margin-top: -20em;
+        margin-bottom: 2em;
+    }
+    
+    #weatherReportHeader {
+        font-size: 2em;
+    }
+    
+    .spanForInfo {
+        margin: 0 auto;
+        display: block;
+        font-size: 1.5em;
+        color: @white;
+        opacity: 0.9;
+        padding: 0;
+        margin-top: -1.4em;
+        margin-bottom: 0.2em;
+        width: 60%;
+    }
+}
+
+/*-------------- 638px ----------------*/ 
+
+@media (min-width: 638px) {
+    
+    .navbar {
+    height: 10% !important;
+    border: none;
+    border-radius: none;
+    background-color: @navBackGroundColor;
+    opacity: 0.9;
+    }
+    
+    .contaenerOfweather {
+        display: block;
+        margin: 0 auto;
+        margin-top: -25em;
+        margin-bottom: 2em;
+    }
+    
+    #weatherReportHeader {
+        font-size: 2.5em;
+    }
+    
+    .spanForInfo {
+        margin: 0 auto;
+        display: block;
+        font-size: 2em;
+        color: @white;
+        opacity: 0.9;
+        padding: 0;
+        margin-top: -1.4em;
+        margin-bottom: 0.2em;
+        width: 60%;
+    }
+}
+
+
+/*-------------- 665px ----------------*/ 
+
+@media (min-width: 665px) {
+    
+    .navbar {
+    height: 10% !important;
+    border: none;
+    border-radius: none;
+    background-color: @navBackGroundColor;
+    opacity: 0.9;
+    }
+    
+    .contaenerOfweather {
+        display: block;
+        margin: 0 auto;
+        margin-top: -25em;
+        margin-bottom: 2em;
+    }
+    
+    #weatherReportHeader {
+        font-size: 2em;
+    }
+    
+    .spanForInfo {
+        margin: 0 auto;
+        display: block;
+        font-size: 2em;
+        color: @white;
+        opacity: 0.9;
+        padding: 0;
+        margin-top: -1.4em;
+        margin-bottom: 0.2em;
+        width: 60%;
+    }
+}
+
+/*-------------- 677px ---------------- */
+
+@media (min-width: 677px) {
+    
+    .navbar {
+    height: 10% !important;
+    border: none;
+    border-radius: none;
+    background-color: @navBackGroundColor;
+    opacity: 0.9;
+    }
+    
+    .contaenerOfweather {
+        display: block;
+        margin: 0 auto;
+        margin-top: -25em;
+        margin-bottom: 3em;
+    }
+    
+    #weatherReportHeader {
+        font-size: 2em;
+    }
+    
+    .spanForInfo {
+        margin: 0 auto;
+        display: block;
+        font-size: 2em;
+        color: @white;
+        opacity: 0.9;
+        padding: 0;
+        margin-top: -1.4em;
+        margin-bottom: 0.2em;
+        width: 60%;
+    }
+}
+
+
+
+/*-------------- 693px ---------------- */
+
+@media (min-width: 693px) {
+    
+    .navbar {
+    height: 10% !important;
+    border: none;
+    border-radius: none;
+    background-color: @navBackGroundColor;
+    opacity: 0.9;
+    }
+    
+    .contaenerOfweather {
+        display: block;
+        margin: 0 auto;
+        margin-top: -25em;
+        margin-bottom: 2em;
+    }
+    
+    #weatherReportHeader {
+        font-size: 2.5em;
+    }
+    
+    .spanForInfo {
+        margin: 0 auto;
+        display: block;
+        font-size: 2em;
+        color: @white;
+        opacity: 0.9;
+        padding: 0;
+        margin-top: -1.4em;
+        margin-bottom: 0.2em;
+        width: 60%;
+    }
+}
+
+/*-------------- 735px ---------------- */
+
+@media (min-width: 735px) {
+    .contaenerOfweather {
+        display: block;
+        margin: 0 auto;
+        margin-top: -27em;
+        margin-bottom: 2em;
+    }
+    
+    #weatherReportHeader {
+        font-size: 2.5em;
+    }
+    
+    .spanForInfo {
+        margin: 0 auto;
+        display: block;
+        font-size: 2em;
+        color: @white;
+        opacity: 0.9;
+        padding: 0;
+        margin-top: -1.4em;
+        margin-bottom: 0.2em;
+        width: 60%;
+    }
+}
+
+/*-------------- 767px ---------------- */
+
+@media (min-width: 767px) {
+    .contaenerOfweather {
+        display: block;
+        margin: 0 auto;
+        margin-top: -28em;
+        margin-bottom: 25em;
+    }
+    
+    #weatherReportHeader {
+        font-size: 2.5em;
+        margin-bottom: 1.5em;
+    }
+    
+    .spanForInfo {
+        margin: 0 auto;
+        display: block;
+        font-size: 2em;
+        color: @white;
+        opacity: 0.9;
+        padding: 0;
+        margin-bottom: 0.2em;
+        width: 60%;
+    }
+    
+    #weatherReportHeader {
+    display: block;
+    color: @white;
+    opacity: 0.8;
+    font-size: 3em;
+}
+
+
+#overallWeatherIcon {
+    margin: 0 auto;
+	width: 30%;
+    height: 30%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: @borderColor;
+    border-radius: 90%;
+    opacity: 0.7;
+}
+
+#temperatureIcon {
+    margin: 0 auto;
+	width: 30%;
+    height: 30%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: @borderColor;
+    border-radius: 90%;
+    opacity: 0.7;
+}
+
+
+
+#windIcon {
+    margin: 0 auto;
+    width: 30%;
+    height: 30%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: @borderColor;
+    border-radius: 90%;
+    opacity: 0.7;
+}
+
+#dayTime {
+    margin: 0 auto;
+    width: 30%;
+    height: 30%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: @borderColor;
+    border-radius: 90%;
+    opacity: 0.7;
+}
+}
+
+/*-------------- 1023px ---------------- */
+
+@media (min-width: 1023px) {
+    .contaenerOfweather {
+        display: block;
+        margin: 0 auto;
+        margin-top: -38em;
+        margin-bottom: 30em;
+    }
+    
+    #weatherReportHeader {
+        font-size: 3.5em;
+        margin-bottom: 1.5em;
+    }
+    
+    .spanForInfo {
+        margin: 0 auto;
+        display: block;
+        font-size: 2.5em;
+        color: @white;
+        opacity: 0.9;
+        padding: 0;
+        margin-bottom: 0.2em;
+        width: 60%;
+    }
+    
+    #weatherReportHeader {
+    display: block;
+    color: @white;
+    opacity: 0.8;
+    font-size: 3em;
+}
+
+
+#overallWeatherIcon {
+    margin: 0 auto;
+	width: 30%;
+    height: 30%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: @borderColor;
+    border-radius: 90%;
+    opacity: 0.7;
+}
+
+#temperatureIcon {
+    margin: 0 auto;
+	width: 30%;
+    height: 30%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: @borderColor;
+    border-radius: 90%;
+    opacity: 0.7;
+}
+
+
+
+#windIcon {
+    margin: 0 auto;
+    width: 30%;
+    height: 30%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: @borderColor;
+    border-radius: 90%;
+    opacity: 0.7;
+}
+
+#dayTime {
+    margin: 0 auto;
+    width: 30%;
+    height: 30%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: @borderColor;
+    border-radius: 90%;
+    opacity: 0.7;
+}
+}
+
+/*-------------- 1365px ---------------- */
+
+@media (min-width: 1365px) {
+    .contaenerOfweather {
+        display: block;
+        margin: 0 auto;
+        margin-top: -50em;
+        margin-bottom: 40em;
+    }
+    
+    #weatherReportHeader {
+        font-size: 5em !important;
+        margin-bottom: 1.5em;
+    }
+    
+    .spanForInfo {
+        margin: 0 auto;
+        display: block;
+        font-size: 3.5em;
+        color: @white;
+        opacity: 0.9;
+        padding: 0;
+        margin-bottom: 0.2em;
+        width: 60%;
+    }
+    
+    #weatherReportHeader {
+    display: block;
+    color: @white;
+    opacity: 0.8;
+    font-size: 3em;
+}
+
+
+#overallWeatherIcon {
+    margin: 0 auto;
+	width: 30%;
+    height: 30%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: @borderColor;
+    border-radius: 90%;
+    opacity: 0.7;
+}
+
+#temperatureIcon {
+    margin: 0 auto;
+	width: 30%;
+    height: 30%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: @borderColor;
+    border-radius: 90%;
+    opacity: 0.7;
+}
+
+
+
+#windIcon {
+    margin: 0 auto;
+    width: 30%;
+    height: 30%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: @borderColor;
+    border-radius: 90%;
+    opacity: 0.7;
+}
+
+#dayTime {
+    margin: 0 auto;
+    width: 30%;
+    height: 30%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: @borderColor;
+    border-radius: 90%;
+    opacity: 0.7;
+}
+}
+
+/*-------------- 1919px ---------------- */
+
+@media (min-width: 1919px) {
+    .contaenerOfweather {
+        display: block;
+        margin: 0 auto;
+        margin-top: -70em;
+        margin-bottom: 35em;
+    }
+    
+    #weatherReportHeader {
+        font-size: 7em !important;
+        margin-bottom: 1.5em;
+    }
+    
+    .spanForInfo {
+        margin: 0 auto;
+        display: block;
+        font-size: 3.5em;
+        color: @white;
+        opacity: 0.9;
+        padding: 0;
+        margin-bottom: 0.2em;
+        width: 60%;
+    }
+    
+    #weatherReportHeader {
+    display: block;
+    color: @white;
+    opacity: 0.8;
+    font-size: 3em;
+}
+
+
+#overallWeatherIcon {
+    margin: 0 auto;
+	width: 30%;
+    height: 30%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: @borderColor;
+    border-radius: 90%;
+    opacity: 0.7;
+}
+
+#temperatureIcon {
+    margin: 0 auto;
+	width: 30%;
+    height: 30%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: @borderColor;
+    border-radius: 90%;
+    opacity: 0.7;
+}
+
+
+
+#windIcon {
+    margin: 0 auto;
+    width: 30%;
+    height: 30%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: @borderColor;
+    border-radius: 90%;
+    opacity: 0.7;
+}
+
+#dayTime {
+    margin: 0 auto;
+    width: 30%;
+    height: 30%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: @borderColor;
+    border-radius: 90%;
+    opacity: 0.7;
+}
+}
